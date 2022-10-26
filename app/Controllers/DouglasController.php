@@ -48,18 +48,4 @@ class DouglasController extends AbstractControllers {
 
     }
 
-    private function verificationInputVar() {
-        
-        if (!$this->params['name_pet']) {
-            $this->attrName = 'name_pet';
-            throw new \Exception('the name_pet has to ben send in the request');
-        }
-
-        if (!$this->params['type_service']) {
-            $this->attrName = 'type_service';
-            throw new \Exception('the type_service has to be send in the request');
-        }
-
-    }
-
 }
