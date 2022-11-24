@@ -8,3 +8,8 @@ CREATE TABLE petshop (
         name_pet VARCHAR(255),
         type_service ENUM('banho','tosa')
 );
+
+INSERT INTO petshop (name_pet,type_service) VALUES
+('Rex', 'banho'),
+('Fifi','tosa'),
+('Bilu','banho');
